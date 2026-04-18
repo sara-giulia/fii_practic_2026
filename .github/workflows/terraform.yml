@@ -82,7 +82,7 @@ jobs:
       - name: Terraform Destroy
         run: terraform destroy -auto-approve
 
-      - name: 📝 Post Deployment Summary 
+      - name: 📝 Post Deployment Summary
         if: success()
         run: |
           echo "##CloudPulse Deployment Complete!" >> $GITHUB_STEP_SUMMARY
